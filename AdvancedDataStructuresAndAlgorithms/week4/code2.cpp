@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <limits.h>
 
 using namespace std;
 
@@ -18,7 +19,7 @@ private:
     void Play(int p,int lc,int rc,int(*winner)(T A[],int b,int c),int(*loser)(T A[], int b, int c));
 
 public:
-    LoserTree(int Treesize = INT32_MAX){
+    LoserTree(int Treesize =  INT_MAX){
         MaxSize = Treesize;
     }
     ~LoserTree(){delete [] B;}

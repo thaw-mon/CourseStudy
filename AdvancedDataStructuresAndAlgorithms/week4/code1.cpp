@@ -67,7 +67,9 @@ public:
                 v[current] = v[minChildPoint];
                 current = minChildPoint;
             }
-            break;
+            else { //终止循环
+                break;
+            }
         }
         v[current] = value;
     }
